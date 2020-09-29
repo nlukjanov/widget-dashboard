@@ -2,22 +2,17 @@
   "env": {
     "browser": true,
     "commonjs": true,
-    "es6": true,
-    "jest": true,
-    "cypress/globals": true
+    "es6": true
   },
   "plugins": [
-    "jest",
-    "babel",
     "react",
-    "react-hooks",
+    "react-hooks"
     // "cypress"
   ],
   "extends": [
     "airbnb-base",
     "eslint:recommended",
-    "plugin:jest/recommended",
-    "plugin:react/recommended",
+    "plugin:react/recommended"
     // "plugin:cypress/recommended"
   ],
   "parser": "babel-eslint",
@@ -28,6 +23,7 @@
       "jsx": true
     }
   },
+  "ignorePatterns": ["**/build/**", "**/node_modules/**"],
   "rules": {
     // "brace-style": "error",
     // "camelcase": ["error", { "properties": "never" }],
